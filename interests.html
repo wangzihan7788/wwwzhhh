@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王子涵 - 兴趣爱好</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 20px 80px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .content {
+      padding: 3rem;
+    }
+
+    .interests-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .interest-card {
+      background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+      border-radius: 24px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.4s ease;
+      border: 2px solid transparent;
+    }
+
+    .interest-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(102, 126, 234, 0.15);
+      border-color: rgba(102, 126, 234, 0.2);
+    }
+
+    .interest-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .interest-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #2d3748;
+      margin-bottom: 0.8rem;
+    }
+
+    .interest-description {
+      color: #666;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .highlight-section {
+      margin-top: 3rem;
+      background: linear-gradient(135deg, #fdf2f8 0%, #ede9fe 100%);
+      border-radius: 24px;
+      padding: 2.5rem;
+    }
+
+    .highlight-section h2 {
+      color: #2d3748;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      aspect-ratio: 4/3;
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .footer {
+      background: #f8fafc;
+      padding: 2rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🎨 我的兴趣爱好</h1>
+      <p>生活不止眼前的代码，还有诗和远方</p>
+      <a href="index.html" class="back-link">
+        ← 返回主页
+      </a>
+    </div>
+
+    <div class="content">
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">📖</div>
+          <div class="interest-title">阅读</div>
+          <div class="interest-description">喜欢阅读各类书籍，尤其是文学作品和科技类书籍。阅读让我开阔视野，丰富内心世界。</div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">✈️</div>
+          <div class="interest-title">旅行</div>
+          <div class="interest-description">热爱旅行，喜欢探索不同的地方，感受不同的文化和风景。云南的每一个角落都有我的足迹。</div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">📷</div>
+          <div class="interest-title">摄影</div>
+          <div class="interest-description">用镜头记录生活中的美好瞬间，喜欢拍摄自然风光和人物特写，善于捕捉光影之美。</div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">🎵</div>
+          <div class="interest-title">音乐</div>
+          <div class="interest-description">喜欢听各种类型的音乐，尤其偏爱民谣和轻音乐。音乐是我放松心情的最佳方式。</div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">⛰️</div>
+          <div class="interest-title">户外运动</div>
+          <div class="interest-description">热爱户外运动，徒步、登山、骑行都是我的最爱。亲近大自然，挑战自我极限。</div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">🧁</div>
+          <div class="interest-title">烘焙</div>
+          <div class="interest-description">喜欢烘焙各种甜点，从蛋糕到饼干都有尝试。享受制作过程和分享美食的快乐。</div>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-icon">🎨</div>
+          <div class="interest-title">绘画</div>
+          <div class="interest-description">擅长水彩画和素描，喜欢用画笔表达内心的感受，创作属于自己的艺术作品。</div>
+        </div>
+      </div>
+
+      <div class="highlight-section">
+        <h2>📸 旅行摄影作品</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="wzh/8d41d7bcfd1dff3a1db9dd53149288a0.jpg" alt="旅行风景">
+          </div>
+          <div class="gallery-item">
+            <img src="wzh/85bf667281d68847a3bffe810a220c16.jpg" alt="户外活动">
+          </div>
+          <div class="gallery-item">
+            <img src="wzh/2582174ef7873123e1eb9df2afb04044.jpg" alt="校园生活">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2024 王子涵 | 热爱生活，拥抱每一天
+    </div>
+  </div>
+</body>
+</html>
